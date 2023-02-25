@@ -1,11 +1,16 @@
 package com.company;
 
+import java.util.Arrays;
+
 public class level6 {
     public static void main(String[] args) {
         // array_exam();
         // array_for();
         // array_for2();
-        two_dim_array();
+        // two_dim_array();
+        // array_to_string();
+        // array2_to_string();
+        array_sort();
     }
 
     public static void array_exam() {
@@ -57,5 +62,28 @@ public class level6 {
             System.out.println();
         }
 
+    }
+
+    // одномірний масив вивести масив як текст
+    public static void array_to_string() {
+        int[] array = {1, 2, 3};
+        String str = Arrays.toString(array); // вивести масив як текст
+        //System.out.println(array[0] + "" + array[1] + array[2]);
+        System.out.println(str);
+    }
+
+    // двомірний масив вивести масив як текст
+    public static void array2_to_string() {
+        int[][] array = { {1, 1}, {2, 2}, {3, 3} };
+        String str = Arrays.deepToString(array); // вивести двомірний масив як текст
+        System.out.println(str);
+    }
+
+    // сортування масива
+    public static void array_sort() {
+        int[] array = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+        Arrays.sort(array);
+        //System.out.println(array[0]);
+        System.out.println(Arrays.toString(array));
     }
 }
