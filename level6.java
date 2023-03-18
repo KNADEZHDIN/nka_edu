@@ -7,10 +7,10 @@ public class level6 {
         // array_exam();
         // array_for();
         // array_for2();
-        // two_dim_array();
+        two_dim_array();
         // array_to_string();
         // array2_to_string();
-        array_sort();
+        // array_sort();
     }
 
     public static void array_exam() {
@@ -55,12 +55,14 @@ public class level6 {
                 {6, 7, 8, 9, 10},
                 {11, 12, 13, 14, 15}
         };
-        for (int i = 0; i < matrix.length; i++) { // кількість рядків
+        /*for (int i = 0; i < matrix.length; i++) { // кількість рядків
             for (int j = 0; j < matrix[i].length; j++) { // кількість стовпчиків
                 System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
-        }
+        }*/
+        //System.out.println(Arrays.deepToString(matrix));
+        System.out.println(matrix[2][0]);
 
     }
 
